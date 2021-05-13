@@ -1,0 +1,32 @@
+{
+  "name": "gk",
+  "version": "1.0.0",
+  "description": "Personal web template for GK",
+  "main": "pages/index.jsx",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rootre/gk.git"
+  },
+  "author": "Ondřej Tůma <tu.ondrej@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rootre/gk/issues"
+  },
+  "homepage": "https://github.com/Rootre/gk#readme",
+  "dependencies": {
+    "next": "^10.2.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.15",
+    "tailwindcss": "^2.1.2"
+  }
+}
