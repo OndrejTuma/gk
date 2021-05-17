@@ -1,6 +1,8 @@
 // @flow
 import React from 'react'
 import Head from 'next/head'
+
+import '@styles/fonts.css'
 import 'tailwindcss/tailwind.css'
 
 const GK = ({ Component, pageProps }) => {

@@ -14,6 +14,9 @@
       "@styles/*": [
         "./src/styles/*"
       ],
+      "@fonts/*": [
+        "./public/fonts/*"
+      ],
       "@types/*": [
         "./src/types/*"
       ],
@@ -25,6 +28,9 @@
       ],
       "@icons/*": [
         "./public/icons/*"
+      ],
+      "@images/*": [
+        "./public/img/*"
       ]
     }
   }

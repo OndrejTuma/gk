@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Gunnar';
+  src: url('@fonts/gunnar.woff2') format('woff2'),
+  url('@fonts/gunnar.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Santaray';
+  src: url('@fonts/santaray.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
