@@ -1,3 +1,13 @@
+const plugin = require('tailwindcss/plugin')
+
+const checkedSiblingPlugin = plugin(function ({ addVariant, e }) {
+  addVariant('checked-sibling', ({ container }) => {
+    container.walkRules((rule) => {
+      rule.selector = `:checked + .checked-sibling\\:${rule.selector.slice(1)}`
+    })
+  })
+})
+
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
@@ -21,11 +31,14 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: 'url(/img/cover.jpg)',
+        strikeLine: 'url(/img/strike-line.png)',
       },
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      display: ['checked-sibling'],
+    },
   },
-  plugins: [],
+  plugins: [checkedSiblingPlugin],
 }
