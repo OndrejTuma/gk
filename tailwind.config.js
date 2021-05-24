@@ -33,6 +33,9 @@ module.exports = {
         hero: 'url(/img/cover.jpg)',
         strikeLine: 'url(/img/strike-line.png)',
       },
+      screens: {
+        '3xl': '1750px',
+      },
     },
   },
   variants: {

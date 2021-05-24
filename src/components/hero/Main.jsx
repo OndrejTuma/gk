@@ -4,7 +4,7 @@ import StrikeLine from '@components/hero/StrikeLine'
 
 export default function Main() {
   return (
-    <div className={'p-7 bg-hero bg-cover text-xl md:text-3xl leading-none flex justify-end'}>
+    <div className={'p-7 bg-hero bg-cover text-xl md:text-3xl leading-none flex justify-end 3xl:py-24'}>
       <div className={'w-full lg:w-6/12'}>
         <div className={'max-w-xs md:max-w-screen-sm'}>
           <div className={'font-secondary text-secondary transform -rotate-3 mt-4 mb-2'}>Zrozumitel’né</div>
