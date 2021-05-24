@@ -27,11 +27,14 @@ module.exports = {
       xl: 30,
       '2xl': 45,
       '3xl': 60,
+      '4xl': 100,
     },
     extend: {
       backgroundImage: {
+        frameWhite: 'url(/img/frame_white.png)',
+        frameYellow: 'url(/img/frame_yellow.png)',
         hero: 'url(/img/cover.jpg)',
-        strikeLine: 'url(/img/strike-line.png)',
+        strikeLine: 'url(/img/strike_line.png)',
       },
       screens: {
         '3xl': '1750px',

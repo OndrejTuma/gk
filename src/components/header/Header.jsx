@@ -1,7 +1,7 @@
 import React from 'react'
 
 import Container from '@components/layout/Container'
-import Logo from '@components/Logo'
+import Logo from '@components/header/Logo'
 import Menu from '@components/header/Menu'
 
 export default function Header() {
