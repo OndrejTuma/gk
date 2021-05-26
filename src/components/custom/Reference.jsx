@@ -8,13 +8,15 @@ export default function Reference({ imgUrl, name, description }) {
     <div>
       <figure className={'relative inline-block p-2'}>
         <div className={'absolute w-full h-full left-0 top-0 z-10 bg-frameYellow bg-contain bg-no-repeat bg-center'}/>
-        <Image
-          src={imgUrl}
-          alt={name}
-          width={217}
-          height={212}
-          className={'rounded-full'}
-        />
+        <div className={'rounded-full bg-secondary'}>
+          <Image
+            src={imgUrl}
+            alt={name}
+            width={217}
+            height={212}
+            className={'rounded-full'}
+          />
+        </div>
       </figure>
       <Heading className={'bg-secondary px-10 py-1 mb-6 -mt-8 relative z-10'} level={3}>{name}</Heading>
       <p className={'mx-5'}>
