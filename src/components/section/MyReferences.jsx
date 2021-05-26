@@ -1,8 +1,8 @@
-import Reference from '@components/custom/Reference'
 import React from 'react'
 
 import Container from '@components/layout/Container'
 import Heading from '@components/layout/Heading'
+import Reference from '@components/custom/Reference'
 import Wrapper from '@components/layout/Wrapper'
 
 export default function MyReferences() {

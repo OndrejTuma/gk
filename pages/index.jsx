@@ -24,13 +24,19 @@ export default function Home() {
 
       <MySkills/>
 
-      <MyClients/>
+      <div id={'reference'}>
+        <MyClients/>
+      </div>
 
       <MyReferences/>
 
-      <AboutMe/>
+      <div id={'o-mne'}>
+        <AboutMe/>
+      </div>
 
-      <Contact/>
+      <div id={'kontakt'}>
+        <Contact/>
+      </div>
 
       <LatestNews/>
 
