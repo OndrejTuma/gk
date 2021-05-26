@@ -16,6 +16,7 @@ module.exports = {
       primary: '#231f20',
       secondary: '#fae161',
       white: '#fff',
+      dark: '#ddd',
     },
     fontFamily: {
       primary: ['Gunnar', 'system-ui', 'sans-serif'],

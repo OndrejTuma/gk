@@ -1,4 +1,7 @@
 import AboutMe from '@components/section/AboutMe'
+import Contact from '@components/section/Contact'
+import Footer from '@components/section/Footer'
+import LatestNews from '@components/section/LatestNews'
 import React from 'react'
 import Head from 'next/head'
 
@@ -26,6 +29,12 @@ export default function Home() {
       <MyReferences/>
 
       <AboutMe/>
+
+      <Contact/>
+
+      <LatestNews/>
+
+      <Footer/>
     </div>
   )
 }
