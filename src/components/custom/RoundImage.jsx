@@ -1,8 +1,11 @@
 import React from 'react'
 import cn from 'classnames'
-import Image from 'next/image'
+
+import useLazyLoad from '@hooks/useLazyload'
 
 export default function RoundImage({ alt, className, url, size, isWhite = false, isBig = false }) {
+  const [ref, intersecting] = useLazyLoad()
+
   return (
     <figure className={cn(className, 'relative place-self-start inline-block p-2')}>
       <div className={cn('absolute w-full h-full left-0 top-0 z-10 bg-contain bg-no-repeat bg-center', {
@@ -14,12 +17,13 @@ export default function RoundImage({ alt, className, url, size, isWhite = false,
         'bg-secondary': !isWhite,
         'bg-white': isWhite,
       })}>
-        <Image
-          src={url}
+        <img
+          ref={ref}
           alt={alt}
-          width={size}
-          height={size}
           className={'rounded-full'}
+          height={size}
+          src={intersecting ? url : ''}
+          width={size}
         />
       </div>
     </figure>
