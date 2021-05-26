@@ -32,6 +32,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         frameWhite: 'url(/img/frame_white.png)',
+        frameWhiteBig: 'url(/img/frame_white_big.png)',
         frameYellow: 'url(/img/frame_yellow.png)',
         hero: 'url(/img/cover.jpg)',
         strikeLine: 'url(/img/strike_line.png)',
