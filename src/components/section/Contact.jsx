@@ -13,7 +13,7 @@ export default function Contact() {
           as={'h2'}
           level={1}
           className={'inline-block mb-10'}
-          ribbon={<Ribbon/>}
+          ribbon={<Ribbon className={'px-4 -ml-4'}/>}
         >Ozvite sa</Heading>
         <p className={'text-xl lg:text-2xl mb-8'}>Ideálne e-mailom na gabkakoscova(at)gmail.com</p>
         <p className={'mb-4'}>Na vykanie si nepotrpím. Ak ani vy nie, pokojne mi rovno tykajte.</p>

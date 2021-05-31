@@ -19,46 +19,22 @@ export default function MySkills() {
           <Skill
             Icon={CopyWritingIcon}
             name={'Copywriting'}
-            description={(
-              <>
-                Texty na web, newsletter, <br/>
-                produktová či info stránka, blogový príspevok <br/>
-                alebo natívna reklama. Napíšem to za vás.
-              </>
-            )}
+            description={'Texty na web, newsletter, produktová či info stránka, blogový príspevok alebo natívna reklama. Napíšem to za vás.'}
           />
           <Skill
             Icon={CopyEditingIcon}
             name={'Copyediting'}
-            description={(
-              <>
-                Texty máte hotové <br/>
-                a potrebujete na nich hodiť odborné oko? <br/>
-                Pozriem, okomentujem, prípadne vám to prepíšem.
-              </>
-            )}
+            description={'Texty máte hotové a potrebujete na nich hodiť odborné oko? Pozriem, okomentujem, prípadne vám to prepíšem.'}
           />
           <Skill
             Icon={IdeaIcon}
             name={'Copy a content manažment'}
-            description={(
-              <>
-                Je čas riešiť copy a content na webe koncepčne? <br/>
-                Od stratégie cez štruktúru a štýl až po zadanie? <br/>
-                Zmanažujem to celé za vás.
-              </>
-            )}
+            description={'Je čas riešiť copy a content na webe koncepčne? Od stratégie cez štruktúru a štýl až po zadanie? Zmanažujem to celé za vás.'}
           />
           <Skill
             Icon={MarketingIcon}
             name={'Firemná žurnalistika'}
-            description={(
-              <>
-                Mall má svoje médium, Redbull má svoje médium, <br/>
-                aj vy chcete mať svoje médium. <br/>
-                Pomôžem vám ho rozbehnúť.
-              </>
-            )}
+            description={'Mall má svoje médium, Redbull má svoje médium, aj vy chcete mať svoje médium. Pomôžem vám ho rozbehnúť.'}
           />
         </div>
       </Wrapper>

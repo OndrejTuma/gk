@@ -12,6 +12,11 @@ module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    backgroundSize: {
+      cover: 'cover',
+      contain: 'contain',
+      bigger: 'auto 120%',
+    },
     colors: {
       primary: '#231f20',
       secondary: '#fae161',

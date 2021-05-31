@@ -1,4 +1,5 @@
 import MyQuality from '@components/custom/MyQuality'
+import Ribbon from '@components/custom/Ribbon'
 import React from 'react'
 
 import Container from '@components/layout/Container'
@@ -21,6 +22,7 @@ export default function AboutMe() {
               že v newsletteri by malo byť maximálne jedno CTA tlačítko.
             </>
           )}
+          ribbon={<Ribbon level={2} isWhite className={'-ml-4'}/>}
         />
         <MyQuality
           isInverted
@@ -36,6 +38,7 @@ export default function AboutMe() {
               medzi mamičky, takže mi už nie sú cudzie ani témy z detského sveta.
             </>
           )}
+          ribbon={<Ribbon level={2} isWhite className={'ml-4'}/>}
         />
         <MyQuality
           imgUrl={'/img/about/expectation.jpg'}
@@ -51,6 +54,7 @@ export default function AboutMe() {
               No rada sa zapojím do vášho kreatívneho procesu.
             </>
           )}
+          ribbon={<Ribbon level={2} isWhite className={'-ml-4'}/>}
         />
       </Container>
     </Wrapper>

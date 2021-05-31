@@ -6,7 +6,7 @@ import RoundImage from '@components/custom/RoundImage'
 
 export default function Reference({ description, imgUrl, isWhite = false, name, withQuotation = true }) {
   return (
-    <div>
+    <div className={'max-w-sm mx-auto'}>
       <RoundImage alt={name} size={204} url={imgUrl} isWhite={isWhite}/>
       <Heading className={cn('px-4 py-1 mb-6 -mt-8 relative z-10', {
         'bg-secondary': !isWhite,

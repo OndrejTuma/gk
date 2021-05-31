@@ -14,7 +14,7 @@ export default function LatestNews() {
           as={'h2'}
           className={'inline-block mb-10'}
           level={1}
-          ribbon={<Ribbon isWhite/>}
+          ribbon={<Ribbon isWhite className={'px-4 -ml-4'}/>}
         >Píšem len o tom, čomu rozumiem</Heading>
 
         <p className={'text-xl lg:text-2xl mb-4'}>Najnovšie som napísala:</p>
