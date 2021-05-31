@@ -17,7 +17,10 @@ export default function MyQuality({ imgUrl, name, description, isInverted, ribbo
       </div>
       <RoundImage
         alt={name}
-        className={`flex-shrink-0 my-4 lg:my-0 order-${isInverted ? 1 : 2}`}
+        className={cn('flex-shrink-0 my-4 lg:my-0', {
+          'order-1': isInverted,
+          'order-2': !isInverted,
+        })}
         isBig
         isWhite
         size={276}
