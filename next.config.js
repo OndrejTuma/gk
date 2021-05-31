@@ -3,7 +3,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 module.exports = withBundleAnalyzer({
-  assetPrefix: '/gk/out/',
   future: {
     webpack5: true,
   },
