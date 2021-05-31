@@ -1,5 +1,7 @@
 const plugin = require('tailwindcss/plugin')
 
+const IMAGES_PATH = process.env.NEXT_PUBLIC_IMAGES_URL
+
 const checkedSiblingPlugin = plugin(function ({ addVariant, e }) {
   addVariant('checked-sibling', ({ container }) => {
     container.walkRules((rule) => {
@@ -37,11 +39,11 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        frameWhite: 'url(/img/frame_white.png)',
-        frameWhiteBig: 'url(/img/frame_white_big.png)',
-        frameYellow: 'url(/img/frame_yellow.png)',
-        hero: 'url(/img/cover.jpg)',
-        strikeLine: 'url(/img/strike_line.png)',
+        frameWhite: `url(${IMAGES_PATH}frame_white.png)`,
+        frameWhiteBig: `url(${IMAGES_PATH}frame_white_big.png)`,
+        frameYellow: `url(${IMAGES_PATH}frame_yellow.png)`,
+        hero: `url(${IMAGES_PATH}cover.jpg)`,
+        strikeLine: `url(${IMAGES_PATH}strike_line.png)`,
       },
       screens: {
         '3xl': '1750px',

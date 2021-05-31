@@ -1,5 +1,7 @@
 import React from 'react'
 
+import { IMAGES_PATH } from '@constants/path'
+
 import Container from '@components/layout/Container'
 import Heading from '@components/layout/Heading'
 import Reference from '@components/custom/Reference'
@@ -21,21 +23,21 @@ export default function LatestNews() {
 
         <div className={'grid gap-4 lg:grid-cols-3 lg:gap-x-20 mb-9'}>
           <Reference
-            imgUrl={'/img/placeholders/news.jpg'}
+            imgUrl={`${IMAGES_PATH}placeholders/news.jpg`}
             name={'See-think-do-care'}
             description={'v rámci tvorby obsahu'}
             withQuotation={false}
             isWhite
           />
           <Reference
-            imgUrl={'/img/placeholders/news.jpg'}
+            imgUrl={`${IMAGES_PATH}placeholders/news.jpg`}
             name={'Prípadová štúdia'}
             description={'pre portál dovolenka.sme.sk'}
             withQuotation={false}
             isWhite
           />
           <Reference
-            imgUrl={'/img/placeholders/news.jpg'}
+            imgUrl={`${IMAGES_PATH}placeholders/news.jpg`}
             name={'See-think-do-care'}
             description={'v rámci tvorby obsahu'}
             withQuotation={false}

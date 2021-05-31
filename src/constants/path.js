@@ -1,0 +1,1 @@
+export const IMAGES_PATH = process.env.NEXT_PUBLIC_IMAGES_URL
