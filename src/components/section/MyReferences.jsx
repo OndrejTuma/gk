@@ -12,7 +12,7 @@ export default function MyReferences() {
     <Container>
       <Wrapper className={'text-center'}>
         <Heading className={'mb-4'}>Títo ľudia ma odporúčajú ďalej</Heading>
-        <div className="grid gap-4 lg:grid-cols-3 lg:gap-x-20">
+        <div className="grid gap-10 lg:grid-cols-3 lg:gap-x-20">
           <Reference
             imgUrl={`${IMAGES_PATH}reference/filip.jpg`}
             name={'Filip Podstavec'}
