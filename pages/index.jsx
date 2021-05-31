@@ -11,6 +11,10 @@ import MyClients from '@components/section/MyClients'
 import MyReferences from '@components/section/MyReferences'
 import MySkills from '@components/section/MySkills'
 
+export const config = {
+  // unstable_runtimeJS: false
+}
+
 export default function Home() {
   return (
     <div className={'font-primary text-base text-primary'}>
