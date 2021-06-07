@@ -18,13 +18,13 @@ const clients = [
 
 export default function MyClients() {
   return (
-    <Wrapper isSecondary isFat>
+    <Wrapper>
       <Container className={'text-center'}>
         <Heading
           className={'mb-12 lg:mx-16'}
-          ribbon={<Ribbon isWhite/>}
+          ribbon={<Ribbon />}
         >S textami som pomáhala aj týmto klientom</Heading>
-        <div className="grid gap-20 mb-5 lg:grid-cols-4 lg:gap-x-20">
+        <div className="grid gap-20 mb-5 lg:grid-cols-3 lg:gap-x-20">
           {clients.map(({ alt, href, src }) => (
             <figure key={src} className={'items-center lg:flex'}>
               {href ? (

@@ -10,7 +10,7 @@ import Wrapper from '@components/layout/Wrapper'
 export default function AboutMe() {
   return (
     <Wrapper isSecondary>
-      <Container>
+      <Container className={'lg:px-6 xl:px-0'}>
         <MyQuality
           imgUrl={`${IMAGES_PATH}about/character.jpg`}
           name={'Čo by ste o mne mali vedieť?'}

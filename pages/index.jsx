@@ -28,11 +28,11 @@ export default function Home() {
 
       <MySkills/>
 
+      <MyReferences/>
+
       <div id={'reference'}>
         <MyClients/>
       </div>
-
-      <MyReferences/>
 
       <div id={'o-mne'}>
         <AboutMe/>
