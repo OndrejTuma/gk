@@ -22,7 +22,8 @@ export default function RoundImage({ alt, className, url, size, isWhite = false,
           alt={alt}
           className={'rounded-full'}
           height={size}
-          src={intersecting ? url : ''}
+          // src={intersecting ? url : ''}
+          src={url}
           width={size}
         />
       </div>

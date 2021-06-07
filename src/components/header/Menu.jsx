@@ -1,5 +1,6 @@
-import Hamburger from '@components/header/Hamburger'
 import React from 'react'
+
+import Hamburger from '@components/header/Hamburger'
 
 import { id as hamburgerId } from './Hamburger'
 
@@ -17,6 +18,7 @@ const menu = [
     url: '#kontakt',
   },
 ]
+const menuId = 'menu'
 
 const handleMenuClick = () => (document.getElementById(hamburgerId).checked = false)
 
@@ -25,7 +27,7 @@ export default function Menu() {
     <div className={'font-primary uppercase text-primary tracking-widest lg:text-lg'}>
       <Hamburger/>
       <div className={'hidden absolute z-10 w-full left-0 checked-sibling:block lg:static lg:block'}>
-        <ul className={'bg-white lg:flex'}>
+        <ul id={menuId} className={'bg-white lg:flex'}>
           {menu.map(({ label, url }) => (
             <li key={url} className={'lg:ml-10'}>
               <a href={url} className={'block p-6 lg:p-0'} onClick={handleMenuClick}>{label}</a>
