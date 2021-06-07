@@ -2,6 +2,7 @@ import React from 'react'
 
 import { IMAGES_PATH } from '@constants/path'
 
+import Client from '@components/custom/Client'
 import Container from '@components/layout/Container'
 import Heading from '@components/layout/Heading'
 import Ribbon from '@components/custom/Ribbon'
@@ -22,19 +23,11 @@ export default function MyClients() {
       <Container className={'text-center'}>
         <Heading
           className={'mb-12 lg:mx-16'}
-          ribbon={<Ribbon />}
+          ribbon={<Ribbon/>}
         >S textami som pomáhala aj týmto klientom</Heading>
         <div className="grid gap-20 mb-5 lg:grid-cols-3 lg:gap-x-20">
           {clients.map(({ alt, href, src }) => (
-            <figure key={src} className={'items-center lg:flex'}>
-              {href ? (
-                <a href={href}>
-                  <img src={src} alt={alt} className={'mx-auto'}/>
-                </a>
-              ) : (
-                <img src={src} alt={alt} className={'mx-auto'}/>
-              )}
-            </figure>
+            <Client key={src} alt={alt} href={href} src={src}/>
           ))}
         </div>
       </Container>
